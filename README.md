@@ -58,12 +58,14 @@ void dfs(int x, int y, int mark, int M, int N, char A[100][100], int B[100][100]
 ## Problem 2: Binary search tree
 ```
 Write a program using binary search tree (BST) to perform:
+
   a) Import from a text file named inpLN.txt with the following structure:
     • The first line contains a number N (N ≤ 105)
     • The next line is an array A consisting of N elements, each element is a non-negative integer
     does not exceed 109.
     • The third line contains a number M (M ≤ 103)
     • The next M lines each contain an integer K (K ≤ 109).
+
   b) Output the output file named outLN.txt M lines corresponding to the last M lines of the input file, each
   row is the largest number in the tree that does not exceed K.
 ```
