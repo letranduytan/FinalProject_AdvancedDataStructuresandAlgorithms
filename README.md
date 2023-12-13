@@ -8,16 +8,19 @@ before and each move can only go to adjacent cells (same row or same
 column), then we call (x,y) and (x', y') connected to each other. A connected region is a set of all
 all positions that from one position in the set can go to any position in the same set
 there. Write a program that implements the following requirements:
-a) Input matrix A (MxN) from the text file named inpLT.txt with the structure
-as follows:
-• First line of 2 numbers M, N (M, N ≤ 100)
-• The next M lines, each line contains N characters 'O' or 'X'
-b) Determine connected regions for positions containing X characters and number them
-similarly for connected regions.
-c) Export to a text file named outLT.txt the number of connected regions containing only 1 cell and
-non-negative integer matrix B (MxN) according to the rule B[i][j] = 0 if
-A[i][j]= ‘O’ and B[i][j] = sequence number of the connected region containing position (i,j) if
-A[i][j]= ‘X’.
+
+  a) Input matrix A (MxN) from the text file named inpLT.txt with the structure
+  as follows:
+    • First line of 2 numbers M, N (M, N ≤ 100)
+    • The next M lines, each line contains N characters 'O' or 'X'
+
+  b) Determine connected regions for positions containing X characters and number them
+  similarly for connected regions.
+
+  c) Export to a text file named outLT.txt the number of connected regions containing only 1 cell and
+  non-negative integer matrix B (MxN) according to the rule B[i][j] = 0 if
+  A[i][j]= ‘O’ and B[i][j] = sequence number of the connected region containing position (i,j) if
+  A[i][j]= ‘X’.
 ```
 ### Example
 ![Output](/img/example1.png)
@@ -55,14 +58,14 @@ void dfs(int x, int y, int mark, int M, int N, char A[100][100], int B[100][100]
 ## Problem 2: Binary search tree
 ```
 Write a program using binary search tree (BST) to perform:
-    =a) Import from a text file named inpLN.txt with the following structure:
-• The first line contains a number N (N ≤ 105)
-• The next line is an array A consisting of N elements, each element is a non-negative integer
-does not exceed 109.
-• The third line contains a number M (M ≤ 103)
-• The next M lines each contain an integer K (K ≤ 109).
-b) Output the output file named outLN.txt M lines corresponding to the last M lines of the input file, each
-row is the largest number in the tree that does not exceed K.
+  a) Import from a text file named inpLN.txt with the following structure:
+    • The first line contains a number N (N ≤ 105)
+    • The next line is an array A consisting of N elements, each element is a non-negative integer
+    does not exceed 109.
+    • The third line contains a number M (M ≤ 103)
+    • The next M lines each contain an integer K (K ≤ 109).
+  b) Output the output file named outLN.txt M lines corresponding to the last M lines of the input file, each
+  row is the largest number in the tree that does not exceed K.
 ```
 ### Example
 ![Output](/img/example2.png)
